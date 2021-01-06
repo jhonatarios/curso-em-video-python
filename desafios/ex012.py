@@ -1,2 +1,2 @@
-valor = float(input("Digite o valor de um produto para saber o valor final com 5% de desconto: "))
-print("O valor final é de R$ {:.2f}, foi dado R$ {:.2f} de desconto".format(valor * 0.95, valor * 0.05))
+valor = float(input("Digite o valor de um produto para saber o valor final com 5% de desconto:\nR$ "))
+print("O valor com desconto é de R$ {:.2f}, foi dado R$ {:.2f} de desconto".format(valor * 0.95, valor * 0.05))
