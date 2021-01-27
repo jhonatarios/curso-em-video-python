@@ -1,2 +1,6 @@
 num = int(input("Digite um numero de 0 a 9999: "))
-print("Milhar: {}\nCentena: {}\nDezena: {}\nUnidade: {}".format(num[0], num[1], num[2], num[3]))
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 %10
+m = num // 1000 % 10
+print("Milhar: {}\nCentena: {}\nDezena: {}\nUnidade: {}".format(m, c, d, u))
