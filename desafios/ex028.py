@@ -1,6 +1,6 @@
-import random
+from random import randrange
 
-numero = random.randrange(0, 5)
+numero = randrange(0, 5) # Randomizar um numero
 escolha = int(input("\nAdvinhe um numero de 0 a 5: "))
 
 if escolha == numero:
