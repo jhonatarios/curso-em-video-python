@@ -4,6 +4,6 @@ numero = randrange(0, 5) # Randomizar um numero
 escolha = int(input("\nAdvinhe um numero de 0 a 5: "))
 
 if escolha == numero:
-    print("Parabens voce acertou!")
+    print("\033[32mParabens voce acertou!\033[m")
 else:
-    print("Ah que pena, voce errou :c")
+    print("\033[31mAh que pena, voce errou :c\033[m")
