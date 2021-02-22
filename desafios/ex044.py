@@ -9,7 +9,13 @@ elif condicaoPagamento == 2:
 elif condicaoPagamento == 3:
     print("O valor a ser pago é de R$ {:.2f}".format(valorProduto))
 elif condicaoPagamento == 4:
-    valorFinal = (valorProduto/100)*120
-    print("O valor a ser pago é de R$ {:.2f}".format(valorFinal))
+    parcelas = int(input("Digite a quantidade de parcelas: "))
+    if parcelas >= 3:
+        valorFinal = (valorProduto / 100) * 120
+        valorParcelas = valorFinal / parcelas
+        print("O valor a ser pago é de R$ {:.2f}, em {} parcelas de {}.".format(valorFinal, parcelas, valorParcelas))
+    else:
+        print("Quantidade de parcelas invalidas, tente novamente.")
+        quit()
 else:
     print("Escolha uma opcao valida.")

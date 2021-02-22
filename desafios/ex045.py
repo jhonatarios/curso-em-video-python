@@ -5,16 +5,26 @@ pedra = 1
 papel = 2
 tesoura = 3
 if pc == pedra and escolha == papel:
-    print("{}. Voce ganhou!".format(pc))
+    print("Computador jogou PEDRA\nJogador jogou PAPEL\n\nVoce ganhou!")
 elif pc == pedra and escolha == tesoura:
-    print("{}. Voce perdeu.".format(pc))
+    print("Computador jogou PEDRA\nJogador jogou TESOURA\n\nVoce perdeu.")
 elif pc == papel and escolha == tesoura:
-    print("{}. Voce ganhou!".format(pc))
+    print("Computador jogou PAPEL\nJogador jogou TESOURA\n\nVoce ganhou!")
 elif pc == papel and escolha == pedra:
-    print("{}. Voce perdeu.".format(pc))
+    print("Computador jogou PAPEL\nJogador jogou PEDRA\n\nVoce perdeu.")
 elif pc == tesoura and escolha == pedra:
-    print("{}. Voce ganhou!".format(pc))
+    print("Computador jogou TESOURA\nJogador jogou PEDRA\n\nVoce ganhou!")
 elif pc == tesoura and escolha == papel:
-    print("{}. Voce perdeu.".format(pc))
+    print("Computador jogou TESOURA\nJogador jogou PAPEL\n\nVoce perdeu.")
 else:
-    print("{}. Empate!".format(pc))
+    if escolha == 1:
+        empate = "Pedra"
+        print("Ambos escolheram {}\n\nEmpate!".format(empate))
+    elif escolha == 2:
+        empate = "Papel"
+        print("Ambos escolheram {}\n\nEmpate!".format(empate))
+    elif escolha == 3:
+        empate = "Tesoura"
+        print("Ambos escolheram {}\n\nEmpate!".format(empate))
+    else:
+        print("Escolha invalida")
