@@ -7,7 +7,7 @@ elif condicaoPagamento == 2:
     valorFinal = (valorProduto/100)*95
     print("O valor a ser pago é de R$ {:.2f}".format(valorFinal))
 elif condicaoPagamento == 3:
-    print("O valor a ser pago é de R$ {:.2f}".format(valorProduto))
+    print("O valor a ser pago é de R$ {:.2f}, em 2 parcelas de R$ {:.2f}".format(valorProduto, (valorProduto/2)))
 elif condicaoPagamento == 4:
     parcelas = int(input("Digite a quantidade de parcelas: "))
     if parcelas >= 3:
