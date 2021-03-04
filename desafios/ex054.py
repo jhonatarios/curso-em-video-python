@@ -5,7 +5,7 @@ maior = 0
 menor = 0
 
 for pessoas in range(1, 8):
-    ano = int(input("Digite o seu ano de nascimento: "))
+    ano = int(input(f"Digite o ano de nascimento da {pessoas}ª pessoa: "))
     if (year - ano) > 21 or (year - ano) < -21:
         maior += 1
     else:

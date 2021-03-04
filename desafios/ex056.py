@@ -5,11 +5,12 @@ maior = 0
 nomeHomemMaisVelho = ""
 
 for pessoas in range(1, 5):
+    print(f"-----{pessoas}ª PESSOA-----")
     nome = str(input("Digite um nome: "))
     idade = int(input("Digite uma idade: "))
     sexo = str(input("Digite o seu sexo (M/F): ")).upper()[0]
 
-    soma = soma + idade
+    soma += idade
     media = soma / pessoas
 
     if sexo == "M" and idade > maior:
