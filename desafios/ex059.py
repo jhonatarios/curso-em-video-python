@@ -24,4 +24,6 @@ while not escolha == 5:
         continue
     if escolha == 5:
         break
+    else:
+        print("Voce escolheu uma opcao incorreta. Tente novamenteo!\n")
 print("Acabou")
