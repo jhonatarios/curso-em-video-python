@@ -12,20 +12,17 @@ while not escolha == 5:
                         "[5] Sair do programa\n"))
     if escolha == 1:
         print(f"A soma de {n1} com {n2} é de {n1+n2}\n")
-        quit()
-    elif escolha == 2:
+    if escolha == 2:
         print(f"A multiplicacao de {n1} com {n2} é de {n1*n2}\n")
-        quit()
-    elif escolha == 3:
+    if escolha == 3:
         if n1 > n2:
             maior = n1
         else:
             maior = n2
         print(f"O maior numero é {maior}\n")
-        quit()
-    elif escolha == 4:
+    if escolha == 4:
         continue
-    elif escolha == 5:
+    if escolha == 5:
         break
     else:
         print("Voce escolheu uma opcao incorreta. Tente novamenteo!\n")
